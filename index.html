@@ -9,16 +9,22 @@
   <meta name="keywords" content="Pranav Kamalakar, Computer Science, Computer Engineering, Bloomspark Agency, Python, AI Learner, Portfolio">
   <meta name="author" content="Pranav Kamalakar">
   
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+  
   <!-- Open Graph / Meta -->
   <meta property="og:type" content="website">
   <meta property="og:title" content="Pranav Kamalakar | Computer Science Student &amp; Founder">
   <meta property="og:description" content="Personal portfolio of Pranav Kamalakar. Explore learning journey, agency work, certifications, and technical foundations.">
   <meta property="og:url" content="https://pranavkamalakar.github.io/">
+  <meta property="og:image" content="assets/pranav.jpg">
   
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Pranav Kamalakar | Computer Science Student &amp; Founder">
   <meta name="twitter:description" content="Personal portfolio of Pranav Kamalakar. Explore learning journey, agency work, certifications, and technical foundations.">
+  <meta name="twitter:image" content="assets/pranav.jpg">
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -73,44 +79,59 @@
     <!-- Hero Section -->
     <section class="hero-section" id="hero">
       <div class="container hero-container">
-        <div class="hero-badge">
-          <span class="badge-dot"></span>
-          <span>Computer Engineering &bull; Exploring AI</span>
-        </div>
-        
-        <h1 class="hero-title">
-          Pranav Kamalakar
-        </h1>
-        
-        <p class="hero-subtitle">
-          Computer Science student and AI enthusiast actively learning and exploring AI, machine learning, Python, and hands-on projects to solve real-world problems.
-        </p>
-
-        <div class="hero-cta-group">
-          <a href="#agency" class="btn btn-primary">
-            <span>Explore Agency</span>
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <line x1="5" y1="12" x2="19" y2="12"></line>
-              <polyline points="12 5 19 12 12 19"></polyline>
-            </svg>
-          </a>
-          <a href="#contact" class="btn btn-secondary">
-            <span>Get in Touch</span>
-          </a>
-        </div>
-
-        <div class="hero-stats">
-          <div class="stat-card">
-            <span class="stat-number">Founder</span>
-            <span class="stat-label">Bloomspark Agency</span>
+        <div class="hero-content">
+          <div class="hero-badge">
+            <span class="badge-dot"></span>
+            <span>Computer Engineering &bull; Exploring AI</span>
           </div>
-          <div class="stat-card">
-            <span class="stat-number">5+</span>
-            <span class="stat-label">Verified Badges &amp; Certs</span>
+          
+          <h1 class="hero-title">
+            Pranav Kamalakar
+          </h1>
+          
+          <p class="hero-subtitle">
+            Computer Science student and AI enthusiast actively learning and exploring AI, machine learning, Python, and hands-on projects to solve real-world problems.
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="#agency" class="btn btn-primary">
+              <span>Explore Agency</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+            <a href="#contact" class="btn btn-secondary">
+              <span>Get in Touch</span>
+            </a>
           </div>
-          <div class="stat-card">
-            <span class="stat-number">B.Tech</span>
-            <span class="stat-label">Computer Engineering</span>
+
+          <div class="hero-stats">
+            <div class="stat-card">
+              <span class="stat-number">Founder</span>
+              <span class="stat-label">Bloomspark Agency</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-number">5+</span>
+              <span class="stat-label">Verified Badges &amp; Certs</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-number">B.Tech</span>
+              <span class="stat-label">Computer Engineering</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-media">
+          <div class="hero-avatar-card">
+            <div class="avatar-glow"></div>
+            <div class="avatar-image-container">
+              <img src="assets/pranav.jpg" alt="Pranav Kamalakar" class="hero-avatar-img">
+            </div>
+            <div class="avatar-status-pill">
+              <span class="status-indicator"></span>
+              <span class="status-text">Learning &amp; Building</span>
+            </div>
           </div>
         </div>
       </div>
@@ -185,10 +206,14 @@
 
         <div class="agency-spotlight-card">
           <div class="agency-content">
-            <div class="agency-badge">Agency &bull; Autonomous Systems</div>
-            <h3 class="agency-title">Bloomspark Agency</h3>
+            <div class="agency-header-brand">
+              <img src="assets/bloomspark-logo-white.webp" alt="Bloomspark Agency Logo" class="agency-brand-logo">
+              <span class="agency-badge">Autonomous Systems</span>
+            </div>
+
+            <h3 class="agency-title">AI Infrastructure for Modern Startups</h3>
             <p class="agency-description">
-              Bloomspark builds managed AI infrastructure for modern startups. Deploying Agent OS to automate core startup workflows hands-free, and embedding intelligence directly into product architectures.
+              Bloomspark builds managed AI infrastructure for startups. Deploying Agent OS to automate core startup workflows hands-free, and embedding intelligence directly into product architectures.
             </p>
 
             <div class="agency-features-grid">
