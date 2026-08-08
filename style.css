@@ -530,56 +530,54 @@ body {
   box-shadow: var(--shadow-md);
 }
 
-.project-card-header {
+.project-card-top {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.15rem;
+  margin-bottom: 1.15rem;
+}
+
+.project-icon-wrapper {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  margin-bottom: 1.25rem;
+  justify-content: center;
+  width: 2.85rem;
+  height: 2.85rem;
+  border-radius: var(--radius-md);
+  background-color: var(--accent-subtle);
+  color: var(--accent-primary);
+  border: 1px solid rgba(56, 189, 248, 0.2);
+  flex-shrink: 0;
+}
+
+.project-title-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.project-badge-row {
+  display: flex;
+  align-items: center;
 }
 
 .project-type-badge {
   font-family: var(--font-mono);
-  font-size: 0.75rem;
+  font-size: 0.725rem;
   color: var(--accent-primary);
-  background-color: var(--accent-subtle);
-  border: 1px solid rgba(56, 189, 248, 0.2);
-  padding: 0.2rem 0.6rem;
+  background-color: rgba(56, 189, 248, 0.08);
+  border: 1px solid rgba(56, 189, 248, 0.15);
+  padding: 0.15rem 0.55rem;
   border-radius: var(--radius-full);
   text-transform: uppercase;
   letter-spacing: 0.05em;
-}
-
-.project-links {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-}
-
-.project-icon-link {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 2rem;
-  height: 2rem;
-  border-radius: var(--radius-sm);
-  border: 1px solid var(--border-subtle);
-  background-color: var(--bg-main);
-  color: var(--text-secondary);
-  transition: all var(--transition-fast);
-  text-decoration: none;
-}
-
-.project-icon-link:hover {
-  color: var(--accent-primary);
-  border-color: var(--accent-primary);
-  background-color: var(--accent-subtle);
+  font-weight: 500;
 }
 
 .project-title {
   font-size: 1.25rem;
   font-weight: 700;
   color: var(--text-primary);
-  margin-bottom: 0.6rem;
   letter-spacing: -0.015em;
 }
 
@@ -587,7 +585,7 @@ body {
   font-size: 0.925rem;
   color: var(--text-secondary);
   line-height: 1.6;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.25rem;
   flex-grow: 1;
 }
 
@@ -595,6 +593,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   gap: 0.4rem;
+  margin-bottom: 1.5rem;
 }
 
 .tech-pill {
@@ -605,6 +604,48 @@ body {
   border: 1px solid var(--border-subtle);
   padding: 0.25rem 0.55rem;
   border-radius: var(--radius-sm);
+}
+
+.project-card-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border-subtle);
+  margin-top: auto;
+}
+
+.btn-card-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+  text-decoration: none;
+  padding: 0.45rem 0.85rem;
+  border-radius: var(--radius-sm);
+  background-color: var(--bg-main);
+  border: 1px solid var(--border-subtle);
+  transition: all var(--transition-fast);
+}
+
+.btn-card-link:hover {
+  color: var(--text-primary);
+  border-color: var(--border-highlight);
+  background-color: var(--bg-surface);
+}
+
+.btn-card-primary {
+  color: var(--accent-primary);
+  border-color: rgba(56, 189, 248, 0.25);
+  background-color: var(--accent-subtle);
+}
+
+.btn-card-primary:hover {
+  background-color: rgba(56, 189, 248, 0.15);
+  border-color: var(--accent-primary);
+  color: #fff;
 }
 
 .github-more-banner {
